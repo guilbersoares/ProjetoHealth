@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<head>
+<title>+HEALTH</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #574f7d;
+  color: #e0f0ea;
+}
+
+
+.header h1 {
+  font-size: 40px;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #3c2a4d;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #e0f0ea;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+
+.navbar a.right {
+  float: right;
+}
+
+
+.navbar a:hover {
+  background-color: #e0f0ea;
+  color: #3c2a4d;
+}
+
+
+.navbar a.active {
+  background-color: #574f7d;
+  color: #e0f0ea;
+}
+
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+
+.side {
+  -ms-flex: 30%; 
+  flex: 30%;
+  background-color: #95adbe;
+  padding: 20px;
+}
+
+
+.main {   
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color: #e0f0ea;
+  padding: 20px;
+}
+
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #3c2a4d;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>+HEALTH</h1>
+  <p>Um <b>site</b> para melhorar sua saúde</p>
+</div>
+
+<div class="navbar">
+  <a href="homepage.html" class="active">Página Inicial</a>
+  <a href="imc.html">IMC</a>
+  <a href="sejacliente.html">Cadastro</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>SOBRE NÓS</h2>
+    <p>O +HEALTH é um site para a organização e acessibilidade de usuários que desejam ter uma vida mais saudável.</p>
+  </div>
+  <div class="main">
+    
+    <img src = "sale1.png"></img>
+    
+    <br>
+
+    <img src = "sale2.png">
+  
+  </div>
+</div>
+
+<div class="footer">
+  <img src = "whatsappicon.png">
+  <img src = "instagramicon.png">
+  <img src = "tiktokicon.png">
+  <img src = "twittericon.png">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<head>
+<title>+HEALTH</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #574f7d;
+  color: #e0f0ea;
+}
+
+
+.header h1 {
+  font-size: 40px;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #3c2a4d;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #e0f0ea;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+
+.navbar a.right {
+  float: right;
+}
+
+
+.navbar a:hover {
+  background-color: #e0f0ea;
+  color: #3c2a4d;
+}
+
+
+.navbar a.active {
+  background-color: #574f7d;
+  color: #e0f0ea;
+}
+
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+
+.side {
+  -ms-flex: 30%; 
+  flex: 30%;
+  background-color: #95adbe;
+  padding: 20px;
+}
+
+
+.main {   
+  -ms-flex: 70%; 
+  flex: 70%;
+  background-color: #e0f0ea;
+  padding: 20px;
+}
+
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #3c2a4d;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #3c2a4d;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>+HEALTH</h1>
+  <p>Um <b>site</b> para melhorar sua saúde</p>
+</div>
+
+<div class="navbar">
+  <a href="homepage.html">Página Inicial</a>
+  <a href="imc.html">IMC</a>
+  <a href="sejacliente.html" class="active">Cadastro</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>SOBRE NÓS</h2>
+    <p>O +HEALTH é um site para a organização e acessibilidade de usuários que desejam ter uma vida mais saudável.</p>
+  </div>
+  <div class="main">
+   
+   
+    
+    <div>
+        <form action="/action_page.php">
+          <h2>CADASTRO</h2>
+            <label for="fname">NOME</label>
+          <input type= "text" id= "fname" name= "name" placeholder= "Digite aqui o seu nome completo...">
+      
+          <label for = "email">E-MAIL</label>
+          <input type = "text" id = "email" name = "email" placeholder = "Digite aqui o seu e-mail...">
+      
+          <label for = "number">TELEFONE</label>
+          <input type = "text" id = "number" name = "number" placeholder = "Digite aqui o seu número...">
+
+          <label for="service">SERVIÇO</label>
+          <select id="service" name="service">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="others">...</option>
+          </select>
+        
+          <label for="service">APOSENTADO</label>
+          <select id="service" name="service">
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+          </select>
+
+          <input type="submit" value="CADASTRAR">
+        </form>
+      </div>
+  </div>
+</div>
+
+<div class="footer">
+  <img src = "whatsappicon.png">
+  <img src = "instagramicon.png">
+  <img src = "tiktokicon.png">
+  <img src = "twittericon.png">
+</div>
+
+</body>
+</html>
